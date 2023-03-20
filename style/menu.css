@@ -1,0 +1,13 @@
+body {
+    background-size: cover;
+    background-image: url("https://lazysnorlax.files.wordpress.com/2015/11/pokc3a9dex_pt.png");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.navbar {
+    position: sticky;
+}
+.imgpkmnav {
+    height: 30px;
+    width: 30px
+}

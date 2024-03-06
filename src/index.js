@@ -7,10 +7,7 @@ import ReactDOM from 'react-dom';
 
 import Navbar from './components/Navbar/Navbar';
 import  { HashRouter, Routes, Route } from "react-router-dom";
-import Tarjeta from './components/card/card';
-import Principal from './components/home/home';
 import PaginatedPokemonList from './components/PaginatedPokemonList';
-import Cartas from './components/cartas/cartas';
 import Pokeinfo from './components/pokemon/Pokeinfo';
 import PokemonType from './components/pokemon/PokemonType';
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -23,8 +20,6 @@ ReactDOM.render(
         <Navbar/>
           <div className="content">
             <Routes>
-              <Route exact path="/home" element={<Principal/>}></Route>
-              <Route path="/cartas" element={<Cartas/>}></Route>
               <Route path="/pokemon" element={<PokemonProvider><PaginatedPokemonList/></PokemonProvider>}></Route>
               <Route path="/pokemon/:id" element={<Pokeinfo/>}></Route>
               <Route path="/type/:id" element={<PokemonType/>}></Route>

@@ -9,16 +9,10 @@ const NavbarMenu = () => {
         <div className="Menu">
             <Navbar bg="dark" variant="dark" expand="lg">
                 <Container fluid>
-                    <Navbar.Brand href="/home#/home"><img src={logo} width="30" height="30" alt="logo" /></Navbar.Brand>
+                    <Navbar.Brand href="#/"><img src={logo} width="30" height="30" alt="logo" /></Navbar.Brand>
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
                     <Navbar.Collapse id="basic-navbar-nav">
                         <Nav className="me-auto">
-                            <Nav.Link as={NavLink} exact to="/home">
-                                Home
-                            </Nav.Link>
-                            <Nav.Link as={NavLink} to="/cartas">
-                                Cartas
-                            </Nav.Link>
                             <Nav.Link as={NavLink} to="/pokemon">
                                 Pokemon
                             </Nav.Link>
@@ -28,7 +22,7 @@ const NavbarMenu = () => {
                         </Nav>
                     </Navbar.Collapse>
                 </Container>
-                <Search/>
+                {/* <Search/> */}
             </Navbar>
         </div>
     )

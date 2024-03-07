@@ -1,26 +1,26 @@
 .navbar {
-    position: sticky;
+  position: sticky;
 }
 
 .imgpkmnav {
-    height: 30px;
-    width: 30px
+  height: 30px;
+  width: 30px;
 }
 
 .formsflex {
-    display: flex;
-    align-items: right;
-    justify-content: right;
+  display: flex;
+  align-items: right;
+  justify-content: right;
 }
 
 .formsflex > div {
-    margin-left: 2px;
+  margin-left: 2px;
 }
 
 .btnmas {
-    position: fixed;
-    right: 10px;
-    bottom: 10px;
-    z-index: 100;
-    border-radius: 50%;
+  position: fixed;
+  right: 10px;
+  bottom: 10px;
+  z-index: 100;
+  border-radius: 50%;
 }

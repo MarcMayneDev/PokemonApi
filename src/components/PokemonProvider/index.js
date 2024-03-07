@@ -1,2 +1,2 @@
-export {default, usePokemon} from "./PokemonProvider";
-export {default as useFilteredPokemon} from "./useFilteredPokemon";
+export { default, usePokemon } from "./PokemonProvider";
+export { default as useFilteredPokemon } from "./useFilteredPokemon";

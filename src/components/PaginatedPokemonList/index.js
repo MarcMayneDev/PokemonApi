@@ -1,1 +1,1 @@
-export {default} from "./PaginatedPokemonList";
+export { default } from "./PaginatedPokemonList";

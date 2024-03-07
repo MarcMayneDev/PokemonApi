@@ -12,7 +12,13 @@ export const Cardinfo = ({ info }) => {
           <h5 className="card-title">{id}</h5>
         </div>
         <div className="card-body">
-          <img src={sprites.front_default} alt={name} className="card-title" />
+          <img
+            src={sprites.front_default}
+            alt={name}
+            className="card-title"
+            loading="lazy"
+            fetchPriority={id < 15 ? "high" : "low"}
+          />
         </div>
         <div className="card-footer">
           <p className="card-text">{name}</p>

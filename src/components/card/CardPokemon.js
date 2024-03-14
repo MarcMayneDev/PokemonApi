@@ -2,13 +2,14 @@ import { Card, CardActionArea, CardContent, Typography } from "@mui/material";
 import React from "react";
 
 import { UseFetch } from "../UseFetch";
+import LoadingCard from "./LoadingCard";
 
 export const CardPokemon = ({ url, index }) => {
   const estado = UseFetch(url);
   const { cargando, data } = estado;
   const { id, name, sprites } = data || {};
 
-  if (cargando) return <h1>Cargando</h1>;
+  if (cargando) return <LoadingCard />;
 
   return (
     <Card sx={{ width: "16rem" }}>

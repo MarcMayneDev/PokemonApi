@@ -1,6 +1,8 @@
-import React from "react";
-import { CardPokemon } from "../card/CardPokemon";
 import "./Cards.css";
+
+import React from "react";
+
+import { CardPokemon } from "../card/CardPokemon";
 
 const PokemonsList = ({ pokemons }) => {
   return (

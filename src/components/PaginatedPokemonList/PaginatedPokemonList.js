@@ -1,6 +1,7 @@
 import React, { useState } from "react";
+
+import { useFilteredPokemon, usePokemon } from "../PokemonProvider";
 import PokemonsList from "../PokemonsList";
-import { usePokemon, useFilteredPokemon } from "../PokemonProvider";
 
 const PaginatedPokemonList = () => {
   const [searchWord, setSearchWord] = useState("");

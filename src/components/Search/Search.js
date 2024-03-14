@@ -1,6 +1,7 @@
 import React from "react";
+import { Button, Col, Container, Form } from "react-bootstrap";
+
 import { UseFetch } from "../UseFetch";
-import { Form, Container, Col, Button } from "react-bootstrap";
 
 export default function Search() {
   return (

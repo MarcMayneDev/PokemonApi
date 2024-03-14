@@ -1,6 +1,7 @@
 import React from "react";
-import { Navbar, Container, Nav } from "react-bootstrap";
+import { Container, Nav, Navbar } from "react-bootstrap";
 import { NavLink } from "react-router-dom";
+
 import logo from "../../PokemonLogo.png";
 // import Search from '../card/search';
 

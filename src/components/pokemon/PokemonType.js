@@ -1,8 +1,9 @@
 import React, { useEffect, useState } from "react";
-import { UseFetch } from "../UseFetch";
-import { CardType } from "../card/CardType";
 import { useParams } from "react-router-dom";
+
+import { CardType } from "../card/CardType";
 import { Tipos } from "../Tipos/Tipos";
+import { UseFetch } from "../UseFetch";
 
 const PokemonType = () => {
   const { id } = useParams();

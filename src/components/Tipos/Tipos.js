@@ -1,5 +1,7 @@
-import React from "react";
 import "../card/Cardinfo.css";
+
+import React from "react";
+
 const pokeTypes = [
   { tipo: "normal", id: 1 },
   { tipo: "fighting", id: 2 },

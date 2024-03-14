@@ -1,4 +1,5 @@
-import React, { useState, useContext, createContext } from "react";
+import React, { createContext, useContext, useState } from "react";
+
 import { UseFetch } from "../UseFetch";
 
 const PokemonContext = createContext(null);

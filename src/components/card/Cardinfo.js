@@ -1,9 +1,9 @@
-import React from "react";
 import "./Cardinfo.css";
+
+import React from "react";
 
 export const Cardinfo = ({ info }) => {
   const { id, sprites, name, types, height, weight } = info;
-  console.log(info);
 
   return (
     <div>

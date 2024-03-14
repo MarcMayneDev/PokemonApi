@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from "react";
-import { UseFetch } from "../UseFetch";
-import { Cardinfo } from "../card/Cardinfo";
 import { useParams } from "react-router-dom";
+
+import { Cardinfo } from "../card/Cardinfo";
+import { UseFetch } from "../UseFetch";
 
 const Pokeinfo = () => {
   const { id } = useParams();

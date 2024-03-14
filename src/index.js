@@ -1,17 +1,18 @@
-import React from "react";
 // import { BrowserRouter as Router, Switch, Route} from 'react-router-dom';
 import "./index.css";
-// import App from './App';
-import reportWebVitals from "./reportWebVitals";
+import "bootstrap/dist/css/bootstrap.min.css";
+
+import React from "react";
 import ReactDOM from "react-dom";
+import { HashRouter, Route, Routes } from "react-router-dom";
 
 import Navbar from "./components/Navbar/Navbar";
-import { HashRouter, Routes, Route } from "react-router-dom";
 import PaginatedPokemonList from "./components/PaginatedPokemonList";
 import Pokeinfo from "./components/pokemon/Pokeinfo";
 import PokemonType from "./components/pokemon/PokemonType";
-import "bootstrap/dist/css/bootstrap.min.css";
 import PokemonProvider from "./components/PokemonProvider";
+// import App from './App';
+import reportWebVitals from "./reportWebVitals";
 
 ReactDOM.render(
   <React.StrictMode>

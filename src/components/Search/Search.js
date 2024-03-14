@@ -1,11 +1,8 @@
-import React, { useState } from "react";
+import React from "react";
 import { UseFetch } from "../UseFetch";
 import { Form, Container, Col, Button } from "react-bootstrap";
 
-export default function Search({ url }) {
-  const estado = UseFetch(url);
-  const { cargando, data } = estado;
-
+export default function Search() {
   return (
     <Container>
       <h1>{Search}</h1>

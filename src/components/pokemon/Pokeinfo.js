@@ -7,8 +7,6 @@ const Pokeinfo = () => {
   const { id } = useParams();
   const [url, setUrl] = useState("https://pokeapi.co/api/v2/pokemon/" + id);
 
-  const func = () => {};
-
   useEffect(() => {
     setUrl("https://pokeapi.co/api/v2/pokemon/" + id);
   }, [id]);

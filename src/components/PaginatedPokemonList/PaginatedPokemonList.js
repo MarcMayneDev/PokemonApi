@@ -4,7 +4,7 @@ import { usePokemon, useFilteredPokemon } from "../PokemonProvider";
 
 const PaginatedPokemonList = () => {
   const [searchWord, setSearchWord] = useState("");
-  const { cargando, setUrl } = usePokemon();
+  const { cargando } = usePokemon();
   const pokemons = useFilteredPokemon(searchWord);
 
   const onChange = (e) => {

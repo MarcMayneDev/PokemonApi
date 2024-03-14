@@ -1,20 +1,21 @@
-import "./Cards.css";
-
+import { Box } from "@mui/material";
 import React from "react";
 
 import { CardPokemon } from "../card/CardPokemon";
 
 const PokemonsList = ({ pokemons }) => {
   return (
-    <div className="container">
-      <ul className="cards">
-        {pokemons?.map((pokemon, index) => (
-          <li className="card-item" key={pokemon.name}>
-            <CardPokemon url={pokemon.url} index={index} />
-          </li>
-        ))}
-      </ul>
-    </div>
+    <Box
+      display="flex"
+      flexWrap="wrap"
+      justifyContent="center"
+      gap="8px"
+      p="32px"
+    >
+      {pokemons?.map((pokemon, index) => (
+        <CardPokemon url={pokemon.url} index={index} key={pokemon.name} />
+      ))}
+    </Box>
   );
 };
 

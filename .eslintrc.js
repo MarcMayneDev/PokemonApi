@@ -8,6 +8,7 @@ module.exports = {
     "plugin:@typescript-eslint/recommended",
     /* "plugin:react/recommended", */
   ],
+  plugins: ["@typescript-eslint", "react", "import", "simple-import-sort"],
   overrides: [
     {
       env: {
@@ -17,6 +18,19 @@ module.exports = {
       parserOptions: {
         sourceType: "script",
       },
+      rules: {
+        "simple-import-sort/imports": [
+          "error",
+          {
+            groups: [
+              // React, external imports
+              ["^react", "^@?\\w"],
+              // Everything else
+              ["."],
+            ],
+          },
+        ],
+      },
     },
   ],
   parser: "@typescript-eslint/parser",
@@ -24,7 +38,6 @@ module.exports = {
     ecmaVersion: "latest",
     sourceType: "module",
   },
-  plugins: ["@typescript-eslint", "react", "import", "simple-import-sort"],
   rules: {
     "import/newline-after-import": "error",
     "import/no-duplicates": "error",

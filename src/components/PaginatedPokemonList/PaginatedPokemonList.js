@@ -22,7 +22,7 @@ const PaginatedPokemonList = () => {
       ) : (
         <>
           <h4>Total pokemons: {pokemons?.length}</h4>
-          <label for="inputFiltrar">Filtrar pokemons: </label>
+          <label htmlFor="inputFiltrar">Filtrar pokemons: </label>
           <input name="inputFiltrar" onChange={onChange} value={searchWord} />
           <PokemonsList pokemons={pokemons} />
           {/* <div className='container m-auto'>

@@ -1,3 +1,4 @@
+import { Box, Card, TextField, Typography } from "@mui/material";
 import React, { useState } from "react";
 
 import { useFilteredPokemon, usePokemon } from "../PokemonProvider";
@@ -15,22 +16,28 @@ const PaginatedPokemonList = () => {
 
   return (
     <>
-      <h1>Pokemon por orden - Pokedex</h1>
+      <Box display="flex" flexWrap="wrap" justifyContent="center" gap="8px">
+        <Card>
+          <Typography variant="h3">Pokemon por orden - Pokedex</Typography>
 
-      {cargando ? (
-        <h1>Cargando...</h1>
-      ) : (
-        <>
-          <h4>Total pokemons: {pokemons?.length}</h4>
-          <label htmlFor="inputFiltrar">Filtrar pokemons: </label>
-          <input name="inputFiltrar" onChange={onChange} value={searchWord} />
-          <PokemonsList pokemons={pokemons} />
-          {/* <div className='container m-auto'>
-                        <button onClick={(()=>setUrl(data.previous))} className='m-2 btn btn-dark'>Anterior</button>
-                        <button onClick={(()=>setUrl(data.next))} className='m-2 btn btn-dark'>Siguiente</button>
-                    </div> */}
-        </>
-      )}
+          {cargando ? (
+            <h1>Cargando...</h1>
+          ) : (
+            <>
+              <h4>Total pokemons: {pokemons?.length}</h4>
+              <TextField
+                id="standard-basic"
+                name="inputFiltrar"
+                label="Filtrar pokemons:"
+                variant="standard"
+                onChange={onChange}
+                value={searchWord}
+              />
+            </>
+          )}
+        </Card>
+        <PokemonsList pokemons={pokemons} />
+      </Box>
     </>
   );
 };

@@ -24,20 +24,6 @@ const PokemonType = () => {
         <>
           <Tipos />
           <CardType results={data}></CardType>
-          <div className="container m-auto">
-            <button
-              onClick={() => setUrl(data.previous)}
-              className="m-2 btn btn-dark"
-            >
-              Anterior
-            </button>
-            <button
-              onClick={() => setUrl(data.next)}
-              className="m-2 btn btn-dark"
-            >
-              Siguiente
-            </button>
-          </div>
         </>
       )}
     </>

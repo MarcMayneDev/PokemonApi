@@ -1,15 +1,14 @@
 import { Card, CardActionArea, CardContent, Typography } from "@mui/material";
 import React from "react";
 
+import TypePill from "../TypePill";
 import { UseFetch } from "../UseFetch";
 import LoadingCard from "./LoadingCard";
 
 export const CardPokemon = ({ url, index }) => {
   const estado = UseFetch(url);
   const { cargando, data } = estado;
-  const { id, name, sprites } = data || {};
-
-  console.log(data);
+  const { id, name, sprites, types } = data || {};
 
   if (cargando) return <LoadingCard />;
 
@@ -30,6 +29,10 @@ export const CardPokemon = ({ url, index }) => {
           <Typography gutterBottom variant="h5">
             {`${name.charAt(0).toUpperCase()}${name.slice(1)}`}
           </Typography>
+          {types &&
+            types.map(({ type }) => (
+              <TypePill type={type.name} key={type.name} />
+            ))}
         </CardContent>
       </CardActionArea>
     </Card>

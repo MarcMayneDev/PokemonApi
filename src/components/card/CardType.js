@@ -2,7 +2,7 @@ import "./Cards.css";
 
 import React from "react";
 
-import { CardPokemonType } from "./CardPokemonType";
+import { CardPokemon } from "./CardPokemon";
 
 export const CardType = ({ results }) => {
   return (
@@ -10,7 +10,7 @@ export const CardType = ({ results }) => {
       <ul className="cards">
         {results.pokemon.map((p) => (
           <li className="card-item">
-            <CardPokemonType url={p.pokemon.url} />
+            <CardPokemon url={p.pokemon.url} />
           </li>
         ))}
       </ul>

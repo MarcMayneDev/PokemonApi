@@ -3,7 +3,6 @@ import React from "react";
 import { UseFetch } from "../UseFetch";
 
 export const CardPokemonType = ({ url }) => {
-  console.log(url);
   const estado = UseFetch(url);
   const { cargando, data } = estado;
   const { id, name, sprites } = data || {};

@@ -1,4 +1,10 @@
-import { Card, CardActionArea, CardContent, Typography } from "@mui/material";
+import {
+  Box,
+  Card,
+  CardActionArea,
+  CardContent,
+  Typography,
+} from "@mui/material";
 import React from "react";
 
 import TypePill from "../TypePill";
@@ -29,10 +35,12 @@ export const CardPokemon = ({ url, index }) => {
           <Typography gutterBottom variant="h5">
             {`${name.charAt(0).toUpperCase()}${name.slice(1)}`}
           </Typography>
-          {types &&
-            types.map(({ type }) => (
-              <TypePill type={type.name} key={type.name} />
-            ))}
+          <Box display="flex" gap="8px">
+            {types &&
+              types.map(({ type }) => (
+                <TypePill type={type.name} key={type.name} />
+              ))}
+          </Box>
         </CardContent>
       </CardActionArea>
     </Card>

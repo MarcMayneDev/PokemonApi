@@ -9,6 +9,8 @@ export const CardPokemon = ({ url, index }) => {
   const { cargando, data } = estado;
   const { id, name, sprites } = data || {};
 
+  console.log(data);
+
   if (cargando) return <LoadingCard />;
 
   return (
@@ -19,7 +21,7 @@ export const CardPokemon = ({ url, index }) => {
           alt={name}
           className="card-title"
           loading="lazy"
-          fetchPriority={index < 8 ? "high" : "low"}
+          fetchpriority={index < 8 ? "high" : "low"}
         />
         <CardContent>
           <Typography variant="body2" color="text.secondary">

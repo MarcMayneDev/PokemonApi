@@ -17,7 +17,7 @@ export const Cardinfo = ({ info }) => {
             alt={name}
             className="card-title"
             loading="lazy"
-            fetchPriority={id < 15 ? "high" : "low"}
+            fetchpriority={id < 15 ? "high" : "low"}
           />
         </div>
         <div className="card-footer">

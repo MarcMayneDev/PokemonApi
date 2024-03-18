@@ -63,7 +63,7 @@ const theme = createTheme({
       },
       psychic: {
         bg: "#d87093",
-        color: "#FFF",
+        color: "#0F0F0F",
       },
       ice: {
         bg: "#e0ffff",
@@ -79,7 +79,7 @@ const theme = createTheme({
       },
       fairy: {
         bg: "#ee99ac",
-        color: "#FFF",
+        color: "#0F0F0F",
       },
       default: {
         bg: "#a8a878",

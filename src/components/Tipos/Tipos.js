@@ -1,6 +1,7 @@
-import "../card/Cardinfo.css";
-
+import { Box, Link, TextField, Typography } from "@mui/material";
 import React from "react";
+
+import TypePill from "../TypePill";
 
 const pokeTypes = [
   { tipo: "normal", id: 1 },
@@ -24,21 +25,20 @@ const pokeTypes = [
 ];
 export const Tipos = () => {
   return (
-    <div className="container">
-      <ul className="cards">
-        {pokeTypes.map((p) => (
-          <li className="card-item" key={p.tipo}>
-            <div
-              className={p.tipo}
-              style={{ margin: "8px", width: "64px", textAlign: "center" }}
-            >
-              <a className={p.tipo} href={"?#/type/" + p.id}>
-                {p.tipo}
-              </a>
-            </div>
-          </li>
-        ))}
-      </ul>
-    </div>
+    <Box
+      display="flex"
+      flexWrap="wrap"
+      justifyContent="center"
+      p="16px"
+      gap="24px"
+    >
+      {pokeTypes.map((p) => (
+        <Box>
+          <Link underline="none" href={"?#/type/" + p.id}>
+            <TypePill type={p.tipo} />
+          </Link>
+        </Box>
+      ))}
+    </Box>
   );
 };

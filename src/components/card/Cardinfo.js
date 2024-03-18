@@ -1,11 +1,4 @@
-import {
-  Box,
-  Card,
-  CardActionArea,
-  CardContent,
-  Link,
-  Typography,
-} from "@mui/material";
+import { Box, Card, CardContent, Link, Typography } from "@mui/material";
 import React from "react";
 
 import TypePill from "../TypePill";

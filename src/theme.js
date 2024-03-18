@@ -9,26 +9,82 @@ const theme = createTheme({
       contrastText: "#B43000",
     },
     tipos: {
-      normal: "#a8a878",
-      fighting: "#a52a2a",
-      flying: "#6a5acd",
-      poison: "#800080",
-      ground: "#e0c067",
-      rock: "#b8a037",
-      bug: "#808000",
-      ghost: "#705898",
-      steel: "#808080",
-      fire: "#ff0000",
-      water: "#0000ff",
-      grass: "#008000",
-      electric: "#ffd700",
-      psychic: "#d87093",
-      ice: "#e0ffff",
-      dragon: "#7038f8",
-      dark: "#000000",
-      fairy: "#ee99ac",
-      default: "#a8a878",
-      contrastText: "#B43000",
+      normal: {
+        bg: "#a8a878",
+        color: "#FFF",
+      },
+      fighting: {
+        bg: "#a52a2a",
+        color: "#FFF",
+      },
+      flying: {
+        bg: "#6a5acd",
+        color: "#FFF",
+      },
+      poison: {
+        bg: "#800080",
+        color: "#FFF",
+      },
+      ground: {
+        bg: "#e0c067",
+        color: "#0F0F0F",
+      },
+      rock: {
+        bg: "#b8a037",
+        color: "#0F0F0F",
+      },
+      bug: {
+        bg: "#808000",
+        color: "#FFF",
+      },
+      ghost: {
+        bg: "#705898",
+        color: "#FFF",
+      },
+      steel: {
+        bg: "#808080",
+        color: "#FFF",
+      },
+      fire: {
+        bg: "#ff0000",
+        color: "#FFF",
+      },
+      water: {
+        bg: "#0000ff",
+        color: "#FFF",
+      },
+      grass: {
+        bg: "#008000",
+        color: "#FFF",
+      },
+      electric: {
+        bg: "#ffd700",
+        color: "#0F0F0F",
+      },
+      psychic: {
+        bg: "#d87093",
+        color: "#FFF",
+      },
+      ice: {
+        bg: "#e0ffff",
+        color: "#0F0F0F",
+      },
+      dragon: {
+        bg: "#7038f8",
+        color: "#FFF",
+      },
+      dark: {
+        bg: "#0F0F0F",
+        color: "#FFF",
+      },
+      fairy: {
+        bg: "#ee99ac",
+        color: "#FFF",
+      },
+      default: {
+        bg: "#a8a878",
+        color: "#FFF",
+      },
     },
   },
 });

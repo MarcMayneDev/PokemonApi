@@ -1,14 +1,17 @@
-import { Padding } from "@mui/icons-material";
 import { Box, Typography, useTheme } from "@mui/material";
 import React from "react";
 
 const TypePill = ({ type }) => {
   const theme = useTheme();
-  const bg = theme.palette.tipos[type] || theme.palette.tipos["default"];
+  const color = theme.palette.tipos[type] || theme.palette.tipos["default"];
 
   return (
-    <Box sx={{ backgroundColor: bg, paddingX: "8px", borderRadius: "10%" }}>
-      <Typography>{type}</Typography>
+    <Box
+      sx={{ backgroundColor: color.bg, paddingX: "8px", borderRadius: "10%" }}
+    >
+      <Typography color={color.color}>
+        {`${type.charAt(0).toUpperCase()}${type.slice(1)}`}
+      </Typography>
     </Box>
   );
 };

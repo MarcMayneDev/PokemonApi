@@ -6,9 +6,7 @@ const TypePill = ({ type }) => {
   const color = theme.palette.tipos[type] || theme.palette.tipos["default"];
 
   return (
-    <Box
-      sx={{ backgroundColor: color.bg, paddingX: "8px", borderRadius: "10%" }}
-    >
+    <Box paddingX="8px" borderRadius="12px" sx={{ backgroundColor: color.bg }}>
       <Typography color={color.color}>
         {`${type.charAt(0).toUpperCase()}${type.slice(1)}`}
       </Typography>

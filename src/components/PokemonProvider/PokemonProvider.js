@@ -6,7 +6,7 @@ const PokemonContext = createContext(null);
 
 const PokemonProvider = ({ children }) => {
   const [url, setUrl] = useState(
-    "https://pokeapi.co/api/v2/pokemon?limit=1126",
+    "https://pokeapi.co/api/v2/pokemon?limit=3000",
   );
   const { cargando, data } = UseFetch(url);
   const pokemons = data?.results || [];

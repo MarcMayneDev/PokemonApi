@@ -1,4 +1,4 @@
-import { Box, Card, CardContent, Link, Typography } from "@mui/material";
+import { Box, Card, CardContent, Typography } from "@mui/material";
 import React from "react";
 
 import TypePill from "../TypePill";
@@ -20,7 +20,7 @@ export const Cardinfo = ({ info }) => {
           {height / 10}m
         </Typography>
         <Typography gutterBottom variant="body1">
-          {weight / 10}Kg
+          {weight / 10}kg
         </Typography>
         <Box display="flex" gap="8px">
           {types &&
@@ -29,9 +29,6 @@ export const Cardinfo = ({ info }) => {
             ))}
         </Box>
       </CardContent>
-      <Link underline="none" href="?#/pokemon" color="grey.900">
-        Volver
-      </Link>
     </Card>
   );
 };

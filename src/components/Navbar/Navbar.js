@@ -3,7 +3,6 @@ import { AppBar, Box, Drawer, IconButton, Link, Toolbar } from "@mui/material";
 import React, { useState } from "react";
 
 import logo from "../../PokemonLogo.png";
-// import Search from '../card/search';
 
 const NavbarMenu = () => {
   const [drawerOpen, setDrawerOpen] = useState(false);

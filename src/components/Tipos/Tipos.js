@@ -1,4 +1,4 @@
-import { Box, Link, TextField, Typography } from "@mui/material";
+import { Box, Link } from "@mui/material";
 import React from "react";
 
 import TypePill from "../TypePill";
@@ -30,7 +30,7 @@ export const Tipos = () => {
       flexWrap="wrap"
       justifyContent="center"
       p="16px"
-      gap="24px"
+      gap="12px"
     >
       {pokeTypes.map((p) => (
         <Box>

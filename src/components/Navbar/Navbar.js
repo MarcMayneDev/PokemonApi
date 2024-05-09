@@ -6,9 +6,6 @@ import logo from "../../PokemonLogo.png";
 
 const NavbarMenu = () => {
   const [drawerOpen, setDrawerOpen] = useState(false);
-  const toggleDrawer = () => {
-    setDrawerOpen((drawerOpen) => !drawerOpen);
-  };
 
   return (
     <AppBar position="sticky" color="pokemon" component="nav">
@@ -19,11 +16,11 @@ const NavbarMenu = () => {
             aria-label="account of current user"
             aria-controls="menu-appbar"
             color="inherit"
-            onClick={() => toggleDrawer(true)}
+            onClick={() => setDrawerOpen(true)}
           >
             <MenuIcon />
           </IconButton>
-          <Drawer open={drawerOpen} onClose={() => toggleDrawer(false)}>
+          <Drawer open={drawerOpen} onClose={() => setDrawerOpen(false)}>
             <Link underline="none" color="grey.900" href="#/pokemon">
               Pokemon
             </Link>

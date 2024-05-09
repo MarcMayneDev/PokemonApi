@@ -1,5 +1,5 @@
 import { Box, Link } from "@mui/material";
-import React from "react";
+import React, { FC } from "react";
 
 import TypePill from "../TypePill";
 
@@ -23,7 +23,8 @@ const pokeTypes = [
   { tipo: "dark", id: 17 },
   { tipo: "fairy", id: 18 },
 ];
-export const Tipos = () => {
+
+const Tipos: FC = () => {
   return (
     <Box
       display="flex"
@@ -42,3 +43,4 @@ export const Tipos = () => {
     </Box>
   );
 };
+export default Tipos;

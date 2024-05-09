@@ -1,7 +1,7 @@
 import { Card, CardContent, Skeleton } from "@mui/material";
-import React from "react";
+import React, { FC } from "react";
 
-const LoadingCard = () => {
+const LoadingCard: FC = () => {
   return (
     <Card sx={{ width: "16rem" }}>
       <Skeleton variant="rectangular" animation="wave" width={96} height={96} />

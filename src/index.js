@@ -8,6 +8,7 @@ import { HashRouter, Route, Routes } from "react-router-dom";
 import Navbar from "./components/Navbar/Navbar";
 import Pokeinfo from "./components/pokemon/Pokeinfo";
 import PokemonProvider from "./components/PokemonProvider";
+import Landing from "./pages/Landing";
 import Pokedex from "./pages/Pokedex";
 import Tipos from "./pages/Tipos";
 // import App from './App';
@@ -30,6 +31,7 @@ root.render(
           />
           <Route path="/pokemon/:id" element={<Pokeinfo />} />
           <Route path="/type/:id" element={<Tipos />} />
+          <Route path="/" element={<Landing />} />
         </Routes>
       </HashRouter>
     </ThemeProvider>

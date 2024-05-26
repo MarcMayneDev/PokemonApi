@@ -27,7 +27,7 @@ const NavbarMenu = () => {
   }));
 
   return (
-    <AppBar position="sticky" color="pokemon" component="nav">
+    <AppBar position="static" color="pokemon" component="nav">
       <Toolbar>
         <Box sx={{ display: { xs: "flex", md: "none" } }}>
           <IconButton
@@ -84,7 +84,7 @@ const NavbarMenu = () => {
         <Divider
           orientation="vertical"
           flexItem
-          sx={{ paddingLeft: 1, display: { xs: "none", md: "flex" } }}
+          sx={{ paddingX: 1, display: { xs: "none", md: "flex" } }}
         />
         <Box
           gap="16px"

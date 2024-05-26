@@ -17,7 +17,7 @@ const Pokeinfo = () => {
 
   return (
     <div>
-      <h1>Pokemon {id}</h1>
+      {/* <h1>Pokemon {id}</h1> */}
 
       {cargando ? (
         <h1>Cargando...</h1>
